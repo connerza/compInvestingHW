@@ -73,7 +73,7 @@ if __name__ == '__main__':
     #Plotting normalized value -------------------------------------------------------------------------
     plt.clf()
     plt.plot(timestamps, portfolioStatistics.normalizedValues)  # portfolio values
-    plt.plot(timestamps, refStatistics.normalizedValues)  # XOM 50 days
+    plt.plot(timestamps, refStatistics.normalizedValues) # ref values
     plt.axhline(y=0, color='r')
     plt.legend(['Portfolio', compareSym], loc=3)
     plt.ylabel('Adjusted Close')
